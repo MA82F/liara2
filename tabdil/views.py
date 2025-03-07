@@ -3,6 +3,12 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
+{
+    "value":1000,
+    "first_unit":"g",
+    "second_unit":"kg"
+}
+
 class tabdil(APIView):
     def post(self,request):
         value = request.data.get("value")
